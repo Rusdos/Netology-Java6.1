@@ -21,7 +21,7 @@ public class StatsServiceTest {
     // @ParameterizedTest
     // @ValueSource(sales)
     @Test
-    void salesAmount(int[] sales, int expectedSales) {
+    void salesAmount() {
         StatsService service = new StatsService();
         long actual = service.salesAmount(sales);
         assertEquals(expectedSales, actual);
@@ -29,7 +29,7 @@ public class StatsServiceTest {
 
 
     @Test
-    void averageSales(int[] sales, int expectedAverageSales) {
+    void averageSales() {
         StatsService service = new StatsService();
         long actual = service.averageSales(sales);
         assertEquals(expectedAverageSales, actual);
@@ -37,28 +37,28 @@ public class StatsServiceTest {
     }
 
     @Test
-    void maximumSales(int[] sales, int expectedMaximumSales) {
+    void maximumSales() {
         StatsService service = new StatsService();
         int actual = service.maximumSales(sales);
         assertEquals(expectedMaximumSales, actual);
     }
 
     @Test
-    void minimumSales(int[] sales, int expectedMinimumSales) {
+    void minimumSales() {
         StatsService service = new StatsService();
         int actual = service.minimumSales(sales);
         assertEquals(expectedMinimumSales, actual);
     }
 
     @Test
-    void numberBelowAverage(int[] sales, int expectedBelowAverage) {
+    void numberBelowAverage() {
         StatsService service = new StatsService();
         int actual = service.numberBelowAverage(sales);
         assertEquals(expectedBelowAverage, actual);
     }
 
     @Test
-    void numberAboveAverage(int[] sales, int expectedAboveAverage) {
+    void numberAboveAverage() {
         StatsService service = new StatsService();
         int actual = service.numberAboveAverage(sales);
         assertEquals(expectedAboveAverage, actual);
